@@ -1,0 +1,30 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PromptEvalHQ API",
+    "version": "1.0.0",
+    "description": "LLM Evaluation Frameworks, Promptfoo vs DeepEval Benchmarks & Ragas Metrics",
+    "contact": {
+      "name": "PromptEvalHQ",
+      "url": "https://promptevalhq.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://promptevalhq.pages.dev/",
+      "description": "Production Edge"
+    }
+  ],
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Healthcheck",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
